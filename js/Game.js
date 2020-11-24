@@ -12,15 +12,37 @@ class Game {
 
     createPlayers() {
         const players = [];
-        const player1 = new Player( 'Dakota', #e15258, 1, true );
-        const player2 = new Player( 'Jahnel', #e59a13, 2 );
+        const player1 = new Player ( 'Dakota', 1, '#e15258', true );
+        const player2 = new Player ( 'Jahnel', 2, '#e59a13');
         players.push(player1);
         players.push(player2);
         return players;
 
     }
     /**
-     * Gets game ready to play
+     * Initializes game.
      */
-    startGame();
+    startGame() {
+        this.board.drawHTMLBoard();
+        this.activePlayer.activeToken.drawHTMLToken();
+        this.ready = true;
+    };
+
+    get activePlayer() {
+        return this.players.find(player => player.active);
+
+    }
+
+    handleKeydown(e) {
+        if (this.ready = true) {
+            if (e.key === "ArrowLeft") {
+                this.activePlayer.activeToken.moveLeft();
+            } else if (e.key === "ArrowRight") {
+                this.activePlayer.activeToken.moveRight(this.board.columns);
+            } else if (e.key === "ArrowDown") {
+                // move down
+            }
+        }
+    }
+
 }
