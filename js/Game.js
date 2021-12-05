@@ -1,3 +1,5 @@
+const html = document.getElementById('player-turn');
+
 class Game {
     constructor() {
         this.board = new Board();
@@ -19,7 +21,6 @@ class Game {
         players.push(player1);
         players.push(player2);
         return players;
-
     }
     /**
      * Initializes game.
@@ -31,8 +32,10 @@ class Game {
     };
 
     get activePlayer() {
-        return this.players.find(player => player.active);
-
+        const activePlayer = this.players.find(player => player.active);
+        html.innerHTML = `${activePlayer.name}'s Turn!`;
+        return activePlayer;
+        // return this.players.find(player => player.active);
     }
 
     handleKeydown(e) {
@@ -82,8 +85,10 @@ class Game {
      * @param {string} message - Game over message.      
      */
      gameOver(message) {
-         document.getElementById('game-over').style.display = 'block';
-         document.getElementById('game-over').textContent = message;
+        // html.innerHTML = message;
+        alert(message);
+        //  document.getElementById('game-over').style.display = 'block';
+        //  document.getElementById('game-over').textContent = message;
      }
 
       /** 

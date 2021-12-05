@@ -1,6 +1,4 @@
-
 const beginGame = document.getElementById('begin-game');
-
 /** 
  * Listens for click on `#begin-game` and calls startGame() on game object
  */
