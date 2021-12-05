@@ -33,7 +33,7 @@ class Game {
 
     get activePlayer() {
         const activePlayer = this.players.find(player => player.active);
-        html.innerHTML = `${activePlayer.name}'s Turn!`;
+        html.innerHTML = `${activePlayer.name}'s turn!`;
         html.style.color = activePlayer.color;
         return activePlayer;
         // return this.players.find(player => player.active);

@@ -82,12 +82,12 @@ body {
     border-radius: 100%;
     position: absolute;
     top: -50px;
+    border: 1px solid rgb(153, 153, 153);
 }
 
 circle {
     stroke-width: 16px;
 }
-
 
 /* BOARD STAND */
 .stand-container {
