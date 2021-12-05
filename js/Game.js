@@ -16,8 +16,8 @@ class Game {
         const name1 = prompt('Player 1 Name:');
         const name2 = prompt('Player 2 Name:');
         const players = [];
-        const player1 = new Player ( name1, 1, '#e15258', true );
-        const player2 = new Player ( name2, 2, '#e59a13');
+        const player1 = new Player ( name1, 1, '#00C2CB', true );
+        const player2 = new Player ( name2, 2, '#FF1FBA');
         players.push(player1);
         players.push(player2);
         return players;
@@ -34,6 +34,7 @@ class Game {
     get activePlayer() {
         const activePlayer = this.players.find(player => player.active);
         html.innerHTML = `${activePlayer.name}'s Turn!`;
+        html.style.color = activePlayer.color;
         return activePlayer;
         // return this.players.find(player => player.active);
     }

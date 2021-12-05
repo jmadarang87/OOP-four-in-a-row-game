@@ -2,15 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #303853;
-	font-family: 'Wendy One', sans-serif;
+    background-color: white;
+    font-family: 'helvetica', sans-serif;
 	font-size: 1.5em;
-	color: white;
+	color: black;
 	text-align: center;
-    background: rgb(48,56,83); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(48,56,83,1) 0%, rgba(32,38,55,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(48,56,83,1) 0%,rgba(32,38,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(48,56,83,1) 0%,rgba(32,38,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #FFD832; /* Old browsers */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303853', endColorstr='#202637',GradientType=0 ); /* IE6-9 */
 }
 
@@ -21,7 +18,7 @@ body {
 }
 
 .table {
-    background-color: #645a7e;
+    background-color: white;
     z-index: 10;
     width: 100%;
     position: fixed;
@@ -30,9 +27,9 @@ body {
 
 #begin-game {
 	width: 200px;
-	background-color: #645a7e;
+	background-color: #FFD832;
 	border-radius: 8px;
-    color: #fff;
+    color: black;
 	padding: 25px;
 	position: absolute;
 	left: 0;
@@ -41,7 +38,7 @@ body {
 	top: 200px;
 	z-index: 200;
 	cursor: pointer;
-	border: none;
+	border: 1px solid black;
     font-family: 'Wendy One', sans-serif;
     font-size: 25px;
 }
@@ -51,7 +48,7 @@ body {
 	position: relative;
 	width: 548px;
 	margin: 0 auto;
-	border: 8px solid #5FCF80;
+	border: 8px solid black;
 	height: 472px;
 	border-radius: 7px;
 	float: left;
@@ -112,14 +109,14 @@ circle {
     width: 20px;
     height: 350px;
     margin: 0 auto;
-    background-color: #e59a13;
+    background-color: black;
     border-radius: 5px 5px 0px 0px;
 }
 
 .stand-attachment {
     width: 15px;
     height: 20px;
-    background-color: #e59a13;
+    background-color: black;
     position: absolute;
     top: 15px;
 }
@@ -134,7 +131,7 @@ circle {
 
 .stand-foot {
     width: 100%;
-    background-color: #e59a13;
+    background-color: black;
     height: 20px;
     border-radius: 8px 8px 0px 0px;
     top: 350px;
@@ -144,5 +141,6 @@ circle {
 /* TEXT CONTENT */
 #player-turn {
     padding-top: 2em;
+    font-size: 2em;
 }
 
