@@ -11,9 +11,11 @@ class Game {
      */
 
     createPlayers() {
+        const name1 = prompt('Player 1 Name:');
+        const name2 = prompt('Player 2 Name:');
         const players = [];
-        const player1 = new Player ( 'Dakota', 1, '#e15258', true );
-        const player2 = new Player ( 'Jahnel', 2, '#e59a13');
+        const player1 = new Player ( name1, 1, '#e15258', true );
+        const player2 = new Player ( name2, 2, '#e59a13');
         players.push(player1);
         players.push(player2);
         return players;
